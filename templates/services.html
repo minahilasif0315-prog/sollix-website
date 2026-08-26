@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Services | SOLLiX Electromechanical Services LLC</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="navbar">
+
+        <div class="brand">
+            <a href="{{ url_for('home') }}">
+                <img src="{{ url_for('static', filename='images/logo.png') }}"
+                     alt="SOLLiX Electromechanical Services LLC"
+                     class="site-logo">
+            </a>
+        </div>
+
+        <nav>
+            <ul class="nav-links">
+
+                <li>
+                    <a href="{{ url_for('home') }}">HOME</a>
+                </li>
+
+                <li>
+                    <a href="{{ url_for('about') }}">ABOUT US</a>
+                </li>
+
+                <li>
+                    <a class="active"
+                       href="{{ url_for('services') }}">SERVICES</a>
+                </li>
+
+                <li>
+                    <a href="{{ url_for('projects') }}">PROJECTS</a>
+                </li>
+
+                <li>
+                    <a href="{{ url_for('values') }}">OUR VALUES</a>
+                </li>
+
+                <li>
+                    <a href="{{ url_for('contact') }}">CONTACT US</a>
+                </li>
+
+            </ul>
+        </nav>
+
+        <a href="{{ url_for('contact') }}" class="quote-btn">
+            GET A QUOTE
+        </a>
+
+    </div>
+
+</header>
+
+<section class="services-banner">
+    <div class="services-banner-content">
+        <span>WHAT WE DO</span>
+        <h1>OUR SERVICES</h1>
+        <p>
+            Complete fire protection and life safety solutions
+            for residential, commercial and industrial projects.
+        </p>
+    </div>
+</section>
+
+
+<section class="services-page">
+
+    <div class="services-page-heading">
+        <span class="section-label">FIRE PROTECTION SOLUTIONS</span>
+        <h2>OUR CORE SERVICES</h2>
+        <div class="section-line"></div>
+        <p>
+            Professional installation, testing and maintenance
+            of essential fire protection systems.
+        </p>
+    </div>
+
+
+    <div class="services-page-grid">
+
+      <div class="service-detail-card">
+    <div class="service-detail-icon">
+        <svg viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="5"></circle>
+            <path d="M7 12H3"></path>
+            <path d="M21 12h-4"></path>
+            <path d="M12 7V3"></path>
+            <path d="M12 21v-4"></path>
+            <path d="M9 12h6"></path>
+        </svg>
+    </div>
+
+    <h3>Fire Pump Systems</h3>
+    <p>
+        Installation, testing and commissioning of fire
+        pump systems designed to support reliable water
+        pressure for firefighting applications.
+    </p>
+</div>
+
+
+<div class="service-detail-card">
+    <div class="service-detail-icon">
+        <svg viewBox="0 0 24 24">
+            <path d="M12 3v5"></path>
+            <path d="M8 8h8"></path>
+            <path d="M10 8v3"></path>
+            <path d="M14 8v3"></path>
+            <path d="M8 14l-2 3"></path>
+            <path d="M12 14v4"></path>
+            <path d="M16 14l2 3"></path>
+        </svg>
+    </div>
+
+    <h3>Firefighting Sprinkler Systems</h3>
+    <p>
+        Complete sprinkler system installation including
+        upright, pendent, concealed and sidewall systems.
+    </p>
+</div>
+
+
+<div class="service-detail-card">
+    <div class="service-detail-icon">
+        <svg viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="7"></circle>
+            <circle cx="12" cy="12" r="3"></circle>
+            <path d="M15 12h5"></path>
+            <path d="M20 12v4"></path>
+        </svg>
+    </div>
+
+    <h3>Fire Hose Reel Systems</h3>
+    <p>
+        Professional hose reel system installation for
+        fast and accessible manual firefighting response.
+    </p>
+</div>
+
+
+<div class="service-detail-card">
+    <div class="service-detail-icon">
+        <svg viewBox="0 0 24 24">
+            <path d="M4 7h16"></path>
+            <path d="M7 7v10"></path>
+            <path d="M17 7v10"></path>
+            <path d="M7 12h10"></path>
+            <circle cx="12" cy="12" r="2"></circle>
+        </svg>
+    </div>
+
+    <h3>Pre-Action Fire Protection Systems</h3>
+    <p>
+        Pre-action protection solutions for locations
+        requiring controlled activation and enhanced
+        fire safety.
+    </p>
+</div>
+
+
+<div class="service-detail-card">
+    <div class="service-detail-icon">
+        <svg viewBox="0 0 24 24">
+            <path d="M12 3c-3 4-5 6-5 9a5 5 0 0 0 10 0c0-3-2-5-5-9z"></path>
+            <circle cx="9" cy="18" r="1"></circle>
+            <circle cx="13" cy="19" r="1"></circle>
+            <circle cx="16" cy="17" r="1"></circle>
+        </svg>
+    </div>
+
+    <h3>Foam Fire Suppression Systems</h3>
+    <p>
+        Foam suppression systems designed for specialized
+        fire risks and industrial applications.
+    </p>
+</div>
+
+
+<div class="service-detail-card">
+    <div class="service-detail-icon">
+        <svg viewBox="0 0 24 24">
+            <rect x="8" y="5" width="8" height="14" rx="2"></rect>
+            <path d="M10 5V3h4v2"></path>
+            <path d="M16 9h2"></path>
+            <path d="M18 9v3"></path>
+        </svg>
+    </div>
+
+    <h3>FM200 Clean Agent Systems</h3>
+    <p>
+        Clean agent suppression solutions for critical
+        environments where water-based suppression may
+        not be suitable.
+    </p>
+</div>
+
+
+<div class="service-detail-card">
+    <div class="service-detail-icon">
+        <svg viewBox="0 0 24 24">
+            <rect x="7" y="4" width="10" height="16" rx="3"></rect>
+            <path d="M10 4V2h4v2"></path>
+            <path d="M9 12h6"></path>
+        </svg>
+    </div>
+
+    <h3>LPG Tank & Piping Systems</h3>
+    <p>
+        Professional LPG tank and piping system installation
+        with a strong focus on safety and compliance.
+    </p>
+</div>
+
+
+<div class="service-detail-card">
+    <div class="service-detail-icon">
+        <svg viewBox="0 0 24 24">
+            <path d="M14 6l4 4"></path>
+            <path d="M5 19l6-6"></path>
+            <path d="M13 11l5-5"></path>
+            <path d="M4 20l3-1-2-2z"></path>
+        </svg>
+    </div>
+
+    <h3>Firefighting Equipment Installation</h3>
+    <p>
+        Installation of valves, cabinets, hydrants,
+        extinguishers, zone valves and related fire
+        protection equipment.
+    </p>
+</div>
+
+
+<div class="service-detail-card">
+    <div class="service-detail-icon">
+        <svg viewBox="0 0 24 24">
+            <path d="M12 3v5"></path>
+            <path d="M9 8h6"></path>
+            <path d="M7 13l-2 4"></path>
+            <path d="M10 13l-1 5"></path>
+            <path d="M14 13l1 5"></path>
+            <path d="M17 13l2 4"></path>
+        </svg>
+    </div>
+
+    <h3>MVWS Systems</h3>
+    <p>
+        Medium Velocity Water Spray systems for industrial
+        and specialized fire protection requirements.
+    </p>
+</div>
+
+
+<div class="service-detail-card">
+    <div class="service-detail-icon">
+        <svg viewBox="0 0 24 24">
+            <path d="M5 9h14"></path>
+            <path d="M7 9l2-4h6l2 4"></path>
+            <path d="M8 13v4"></path>
+            <path d="M12 13v4"></path>
+            <path d="M16 13v4"></path>
+            <path d="M6 20h12"></path>
+        </svg>
+    </div>
+
+    <h3>Kitchen Hood Suppression Systems</h3>
+    <p>
+        Fire suppression solutions for commercial kitchens,
+        cooking equipment and hood systems.
+    </p>
+</div>
+
+</div>
+
+</section>
+<section class="services-process">
+
+    <div class="process-heading">
+        <span class="section-label">HOW WE WORK</span>
+        <h2>OUR SERVICE PROCESS</h2>
+        <div class="section-line"></div>
+    </div>
+
+    <div class="process-grid">
+
+        <div class="process-box">
+            <span>01</span>
+            <h3>ASSESSMENT</h3>
+            <p>We review project requirements and site conditions.</p>
+        </div>
+
+        <div class="process-box">
+            <span>02</span>
+            <h3>INSTALLATION</h3>
+            <p>Our team executes professional system installation.</p>
+        </div>
+
+        <div class="process-box">
+            <span>03</span>
+            <h3>TESTING</h3>
+            <p>Installed systems are tested for proper operation.</p>
+        </div>
+
+        <div class="process-box">
+            <span>04</span>
+            <h3>MAINTENANCE</h3>
+            <p>Ongoing support helps maintain reliable performance.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="home-cta">
+    <div class="cta-content">
+
+        <div>
+            <span>NEED A FIRE PROTECTION SOLUTION?</span>
+            <h2>LET'S DISCUSS YOUR PROJECT</h2>
+        </div>
+
+        <a href="{{ url_for('contact') }}" class="cta-button">
+            GET IN TOUCH →
+        </a>
+
+    </div>
+</section>
+
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-company">
+
+    <a href="{{ url_for('home') }}">
+        <img src="{{ url_for('static', filename='images/logo.png') }}"
+             alt="SOLLiX Electromechanical Services LLC"
+             class="footer-logo-image">
+    </a>
+
+    <p>
+        Professional fire protection and life safety
+        solutions for residential, commercial and
+        industrial projects across the UAE.
+    </p>
+
+</div>
+
+
+        <div class="footer-column">
+            <h3>QUICK LINKS</h3>
+
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('about') }}">About Us</a>
+            <a href="{{ url_for('services') }}">Services</a>
+            <a href="{{ url_for('projects') }}">Projects</a>
+            <a href="{{ url_for('values') }}">Our Values</a>
+            <a href="{{ url_for('contact') }}">Contact Us</a>
+        </div>
+
+
+        <div class="footer-column">
+            <h3>OUR SERVICES</h3>
+
+            <p>Fire Pump Systems</p>
+            <p>Sprinkler Systems</p>
+            <p>Fire Hose Reel Systems</p>
+            <p>FM200 Systems</p>
+            <p>Foam Suppression Systems</p>
+            <p>LPG Tank & Piping Systems</p>
+        </div>
+
+
+        <div class="footer-column footer-contact">
+            <h3>GET IN TOUCH</h3>
+
+            <p>
+                <strong>Location:</strong><br>
+                Dubai, United Arab Emirates
+            </p>
+
+            <p>
+                <strong>Phone:</strong><br>
+                +971 50 123 4567
+            </p>
+
+            <p>
+                <strong>Email:</strong><br>
+                info@sollix.ae
+            </p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>
+            © 2026 SOLLiX Electromechanical Services LLC.
+            All Rights Reserved.
+        </p>
+
+        <a href="#top">BACK TO TOP ↑</a>
+    </div>
+
+</footer>
+
+</body>
+</html>

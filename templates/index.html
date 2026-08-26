@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SOLLiX Electromechanical Services LLC</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body id="top">
+
+
+<!-- ==================================================
+     NAVBAR
+================================================== -->
+
+<header class="header">
+
+    <div class="navbar">
+
+        <!-- LOGO -->
+
+        <div class="brand">
+            <a href="{{ url_for('home') }}">
+
+                <img src="{{ url_for('static', filename='images/logo.png') }}"
+                     alt="SOLLiX Electromechanical Services LLC"
+                     class="site-logo">
+
+            </a>
+        </div>
+
+
+        <!-- NAVIGATION -->
+
+        <nav>
+
+            <ul class="nav-links">
+
+                <li>
+                    <a class="active"
+                       href="{{ url_for('home') }}">
+                        HOME
+                    </a>
+                </li>
+
+                <li>
+                    <a href="{{ url_for('about') }}">
+                        ABOUT US
+                    </a>
+                </li>
+
+                <li>
+                    <a href="{{ url_for('services') }}">
+                        SERVICES
+                    </a>
+                </li>
+
+                <li>
+                    <a href="{{ url_for('projects') }}">
+                        PROJECTS
+                    </a>
+                </li>
+
+                <li>
+                    <a href="{{ url_for('values') }}">
+                        OUR VALUES
+                    </a>
+                </li>
+
+                <li>
+                    <a href="{{ url_for('contact') }}">
+                        CONTACT US
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+
+        <!-- QUOTE BUTTON -->
+
+        <a href="{{ url_for('contact') }}"
+           class="quote-btn">
+            GET A QUOTE
+        </a>
+
+    </div>
+
+</header>
+
+
+
+<!-- ==================================================
+     HERO SECTION
+================================================== -->
+
+<section class="hero">
+
+    <!-- LEFT -->
+
+    <div class="hero-left">
+
+        <div class="small-heading">
+            FIRE PROTECTION & LIFE SAFETY SOLUTIONS
+        </div>
+
+
+        <h1>
+            PROTECTING LIVES.<br>
+            SECURING <span>FUTURES.</span>
+        </h1>
+
+
+        <h3>
+            Expert in Firefighting Installation &
+            Maintenance Services Across Dubai & UAE
+        </h3>
+
+
+        <div class="red-line"></div>
+
+
+        <p>
+            We deliver high-quality, reliable and compliant
+            fire protection solutions tailored to your needs.
+        </p>
+
+
+        <div class="hero-buttons">
+
+            <a href="{{ url_for('services') }}"
+               class="primary-btn">
+
+                OUR SERVICES →
+
+            </a>
+
+
+            <a href="{{ url_for('contact') }}"
+               class="secondary-btn">
+
+                CONTACT US →
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- RIGHT IMAGE -->
+
+    <div class="hero-right">
+    <img src="{{ url_for('static', filename='images/hero.jpg') }}"
+         alt="Fire Protection System"
+         class="hero-image">
+</div>
+
+</section>
+
+
+
+<!-- ==================================================
+     FEATURES
+================================================== -->
+
+<section class="features">
+
+
+    <!-- DCD COMPLIANT -->
+
+    <div class="feature">
+
+        <div class="feature-icon">
+
+            <svg viewBox="0 0 24 24">
+
+                <path d="M12 3l7 3v5c0 5-3 8-7 10-4-2-7-5-7-10V6z"></path>
+
+                <path d="M9 12l2 2 4-4"></path>
+
+            </svg>
+
+        </div>
+
+
+        <div>
+
+            <h4>DCD COMPLIANT</h4>
+
+            <p>
+                Fire protection solutions developed
+                with safety and compliance in focus.
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- EXPERT TEAM -->
+
+    <div class="feature">
+
+        <div class="feature-icon">
+
+            <svg viewBox="0 0 24 24">
+
+                <circle cx="9" cy="8" r="3"></circle>
+
+                <circle cx="17" cy="9" r="2"></circle>
+
+                <path d="M3 20c0-4 2-7 6-7s6 3 6 7"></path>
+
+                <path d="M15 14c3 0 5 2 5 5"></path>
+
+            </svg>
+
+        </div>
+
+
+        <div>
+
+            <h4>EXPERT TEAM</h4>
+
+            <p>
+                Skilled engineers and technicians
+                for professional project execution.
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- QUALITY -->
+
+    <div class="feature">
+
+        <div class="feature-icon">
+
+            <svg viewBox="0 0 24 24">
+
+                <circle cx="12" cy="12" r="8"></circle>
+
+                <path d="M8.5 12l2.2 2.2 4.8-5"></path>
+
+            </svg>
+
+        </div>
+
+
+        <div>
+
+            <h4>QUALITY ASSURED</h4>
+
+            <p>
+                Quality materials, equipment and
+                professional installation practices.
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ON TIME -->
+
+    <div class="feature">
+
+        <div class="feature-icon">
+
+            <svg viewBox="0 0 24 24">
+
+                <circle cx="12" cy="12" r="8"></circle>
+
+                <path d="M12 7v5l3 2"></path>
+
+            </svg>
+
+        </div>
+
+
+        <div>
+
+            <h4>ON-TIME DELIVERY</h4>
+
+            <p>
+                Organized project execution focused
+                on efficient delivery.
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- CLIENT SATISFACTION -->
+
+    <div class="feature">
+
+        <div class="feature-icon">
+
+            <svg viewBox="0 0 24 24">
+
+                <path d="M7 11l3 3 7-7"></path>
+
+                <path d="M12 21a9 9 0 1 0-9-9"></path>
+
+            </svg>
+
+        </div>
+
+
+        <div>
+
+            <h4>CLIENT SATISFACTION</h4>
+
+            <p>
+                Professional service focused on
+                long-term client relationships.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     OUR SERVICES
+================================================== -->
+
+<section class="services-section">
+
+    <div class="services-container">
+
+
+        <!-- LEFT INTRO -->
+
+        <div class="services-intro">
+
+            <span class="section-label">
+                WHAT WE DO
+            </span>
+
+
+            <h2>
+                OUR SERVICES
+            </h2>
+
+
+            <div class="section-line"></div>
+
+
+            <p>
+                We provide comprehensive fire protection and
+                life safety solutions for residential,
+                commercial and industrial projects.
+            </p>
+
+
+            <a href="{{ url_for('services') }}"
+               class="services-btn">
+
+                VIEW ALL SERVICES →
+
+            </a>
+
+        </div>
+
+
+
+        <!-- SERVICE COLUMN 1 -->
+
+        <div class="services-list">
+
+
+            <!-- FIRE PUMP -->
+
+            <div class="service-item">
+
+                <div class="service-icon">
+
+                    <svg viewBox="0 0 24 24">
+
+                        <circle cx="12" cy="12" r="5"></circle>
+
+                        <path d="M7 12H3"></path>
+
+                        <path d="M21 12h-4"></path>
+
+                        <path d="M12 7V3"></path>
+
+                        <path d="M12 21v-4"></path>
+
+                    </svg>
+
+                </div>
+
+                <span>
+                    FIRE PUMP SYSTEMS
+                </span>
+
+            </div>
+
+
+
+            <!-- SPRINKLER -->
+
+            <div class="service-item">
+
+                <div class="service-icon">
+
+                    <svg viewBox="0 0 24 24">
+
+                        <path d="M12 3v5"></path>
+
+                        <path d="M8 8h8"></path>
+
+                        <path d="M10 8v3"></path>
+
+                        <path d="M14 8v3"></path>
+
+                        <path d="M8 14l-2 3"></path>
+
+                        <path d="M12 14v4"></path>
+
+                        <path d="M16 14l2 3"></path>
+
+                    </svg>
+
+                </div>
+
+                <span>
+                    FIREFIGHTING SPRINKLER SYSTEMS
+                </span>
+
+            </div>
+
+
+
+            <!-- HOSE REEL -->
+
+            <div class="service-item">
+
+                <div class="service-icon">
+
+                    <svg viewBox="0 0 24 24">
+
+                        <circle cx="12" cy="12" r="7"></circle>
+
+                        <circle cx="12" cy="12" r="3"></circle>
+
+                        <path d="M15 12h5"></path>
+
+                        <path d="M20 12v4"></path>
+
+                    </svg>
+
+                </div>
+
+                <span>
+                    FIRE HOSE REEL SYSTEMS
+                </span>
+
+            </div>
+
+
+
+            <!-- PRE ACTION -->
+
+            <div class="service-item">
+
+                <div class="service-icon">
+
+                    <svg viewBox="0 0 24 24">
+
+                        <path d="M4 7h16"></path>
+
+                        <path d="M7 7v10"></path>
+
+                        <path d="M17 7v10"></path>
+
+                        <path d="M7 12h10"></path>
+
+                        <circle cx="12" cy="12" r="2"></circle>
+
+                    </svg>
+
+                </div>
+
+                <span>
+                    PRE-ACTION FIRE PROTECTION SYSTEMS
+                </span>
+
+            </div>
+
+
+
+            <!-- FOAM -->
+
+            <div class="service-item">
+
+                <div class="service-icon">
+
+                    <svg viewBox="0 0 24 24">
+
+                        <path d="M12 3c-3 4-5 6-5 9a5 5 0 0 0 10 0c0-3-2-5-5-9z"></path>
+
+                        <circle cx="9" cy="18" r="1"></circle>
+
+                        <circle cx="13" cy="19" r="1"></circle>
+
+                        <circle cx="16" cy="17" r="1"></circle>
+
+                    </svg>
+
+                </div>
+
+                <span>
+                    FOAM FIRE SUPPRESSION SYSTEMS
+                </span>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- SERVICE COLUMN 2 -->
+
+        <div class="services-list">
+
+
+            <!-- FM200 -->
+
+            <div class="service-item">
+
+                <div class="service-icon">
+
+                    <svg viewBox="0 0 24 24">
+
+                        <rect x="8"
+                              y="5"
+                              width="8"
+                              height="14"
+                              rx="2"></rect>
+
+                        <path d="M10 5V3h4v2"></path>
+
+                        <path d="M16 9h2"></path>
+
+                        <path d="M18 9v3"></path>
+
+                    </svg>
+
+                </div>
+
+                <span>
+                    FM200 CLEAN AGENT SUPPRESSION SYSTEMS
+                </span>
+
+            </div>
+
+
+
+            <!-- LPG -->
+
+            <div class="service-item">
+
+                <div class="service-icon">
+
+                    <svg viewBox="0 0 24 24">
+
+                        <rect x="7"
+                              y="4"
+                              width="10"
+                              height="16"
+                              rx="3"></rect>
+
+                        <path d="M10 4V2h4v2"></path>
+
+                        <path d="M9 12h6"></path>
+
+                    </svg>
+
+                </div>
+
+                <span>
+                    LPG TANK & PIPING SYSTEMS
+                </span>
+
+            </div>
+
+
+
+            <!-- EQUIPMENT -->
+
+            <div class="service-item">
+
+                <div class="service-icon">
+
+                    <svg viewBox="0 0 24 24">
+
+                        <path d="M14 6l4 4"></path>
+
+                        <path d="M5 19l6-6"></path>
+
+                        <path d="M13 11l5-5"></path>
+
+                        <path d="M4 20l3-1-2-2z"></path>
+
+                    </svg>
+
+                </div>
+
+                <span>
+                    FIREFIGHTING EQUIPMENT INSTALLATION
+                </span>
+
+            </div>
+
+
+
+            <!-- MVWS -->
+
+            <div class="service-item">
+
+                <div class="service-icon">
+
+                    <svg viewBox="0 0 24 24">
+
+                        <path d="M12 3v5"></path>
+
+                        <path d="M9 8h6"></path>
+
+                        <path d="M7 13l-2 4"></path>
+
+                        <path d="M10 13l-1 5"></path>
+
+                        <path d="M14 13l1 5"></path>
+
+                        <path d="M17 13l2 4"></path>
+
+                    </svg>
+
+                </div>
+
+                <span>
+                    MEDIUM VELOCITY WATER SPRAY SYSTEMS
+                </span>
+
+            </div>
+
+
+
+            <!-- KITCHEN HOOD -->
+
+            <div class="service-item">
+
+                <div class="service-icon">
+
+                    <svg viewBox="0 0 24 24">
+
+                        <path d="M5 9h14"></path>
+
+                        <path d="M7 9l2-4h6l2 4"></path>
+
+                        <path d="M8 13v4"></path>
+
+                        <path d="M12 13v4"></path>
+
+                        <path d="M16 13v4"></path>
+
+                        <path d="M6 20h12"></path>
+
+                    </svg>
+
+                </div>
+
+                <span>
+                    KITCHEN HOOD FIRE SUPPRESSION SYSTEMS
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     COMPANY STATISTICS
+================================================== -->
+
+<section class="stats-section">
+
+    <div class="stats-container">
+
+
+        <!-- TEAM -->
+
+        <div class="stat-box">
+
+            <div class="stat-icon">
+
+                <svg viewBox="0 0 24 24">
+
+                    <circle cx="9" cy="8" r="3"></circle>
+
+                    <circle cx="17" cy="9" r="2"></circle>
+
+                    <path d="M3 20c0-4 2-7 6-7s6 3 6 7"></path>
+
+                    <path d="M15 14c3 0 5 2 5 5"></path>
+
+                </svg>
+
+            </div>
+
+
+            <h2>66</h2>
+
+            <p>
+                PERMANENT TEAM STRENGTH
+            </p>
+
+        </div>
+
+
+
+        <!-- ENGINEERS -->
+
+        <div class="stat-box">
+
+            <div class="stat-icon">
+
+                <svg viewBox="0 0 24 24">
+
+                    <circle cx="12" cy="7" r="3"></circle>
+
+                    <path d="M6 20c0-5 2-8 6-8s6 3 6 8"></path>
+
+                    <path d="M9 16h6"></path>
+
+                </svg>
+
+            </div>
+
+
+            <h2>4</h2>
+
+            <p>
+                PROFESSIONAL ENGINEERS
+            </p>
+
+        </div>
+
+
+
+        <!-- TECHNICIANS -->
+
+        <div class="stat-box">
+
+            <div class="stat-icon">
+
+                <svg viewBox="0 0 24 24">
+
+                    <path d="M14 6l4 4"></path>
+
+                    <path d="M5 19l6-6"></path>
+
+                    <path d="M13 11l5-5"></path>
+
+                    <path d="M4 20l3-1-2-2z"></path>
+
+                </svg>
+
+            </div>
+
+
+            <h2>16</h2>
+
+            <p>
+                SKILLED TECHNICIANS
+            </p>
+
+        </div>
+
+
+
+        <!-- UAE -->
+
+        <div class="stat-box">
+
+            <div class="stat-icon">
+
+                <svg viewBox="0 0 24 24">
+
+                    <path d="M12 3l7 3v5c0 5-3 8-7 10-4-2-7-5-7-10V6z"></path>
+
+                    <path d="M9 12l2 2 4-4"></path>
+
+                </svg>
+
+            </div>
+
+
+            <h2>UAE</h2>
+
+            <p>
+                FIRE PROTECTION SOLUTIONS
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     PROJECTS PREVIEW
+================================================== -->
+
+<section class="projects-preview">
+
+    <div class="projects-container">
+
+
+        <!-- INTRO -->
+
+        <div class="projects-heading">
+
+            <span class="section-label">
+                OUR PROJECTS
+            </span>
+
+
+            <h2>
+                PROJECTS WE'RE PROUD OF
+            </h2>
+
+
+            <div class="section-line"></div>
+
+
+            <p>
+                Explore some of our completed fire protection
+                projects delivered across the UAE.
+            </p>
+
+
+            <a href="{{ url_for('projects') }}"
+               class="projects-btn">
+
+                VIEW ALL PROJECTS →
+
+            </a>
+
+        </div>
+
+
+
+        <!-- PROJECT 1 -->
+
+        <div class="project-card">
+
+           <div class="project-photo">
+    <img src="{{ url_for('static', filename='project1.jpg') }}"
+         alt="Binghatti Lavender Project">
+</div>
+
+            <div class="project-info">
+
+                <h3>
+                    Binghatti Lavender
+                </h3>
+
+                <p>
+                    JVC, Dubai
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PROJECT 2 -->
+
+        <div class="project-card">
+
+          <div class="project-photo">
+    <img src="{{ url_for('static', filename='project2.jpg') }}"
+         alt="The Cove-II Project">
+</div>
+
+
+            <div class="project-info">
+
+                <h3>
+                    The Cove-II
+                </h3>
+
+                <p>
+                    Dubai Creek Harbour
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PROJECT 3 -->
+
+        <div class="project-card">
+
+            <div class="project-photo">
+    <img src="{{ url_for('static', filename='project3.jpg') }}"
+         alt="Mangrove Residence Project">
+</div>
+
+
+            <div class="project-info">
+
+                <h3>
+                    Mangrove Residence
+                </h3>
+
+                <p>
+                    Expo City Dubai
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     CTA
+================================================== -->
+
+<section class="home-cta">
+
+    <div class="cta-content">
+
+        <div>
+
+            <span>
+                NEED A RELIABLE FIRE PROTECTION PARTNER?
+            </span>
+
+            <h2>
+                LET'S WORK TOGETHER ON YOUR PROJECT
+            </h2>
+
+        </div>
+
+
+        <a href="{{ url_for('contact') }}"
+           class="cta-button">
+
+            GET IN TOUCH →
+
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     FOOTER
+================================================== -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+
+        <!-- COMPANY -->
+
+        <div class="footer-company">
+
+            <a href="{{ url_for('home') }}">
+
+                <img src="{{ url_for('static', filename='images/logo.png') }}"
+                     alt="SOLLiX Electromechanical Services LLC"
+                     class="footer-logo-image">
+
+            </a>
+
+
+            <p>
+                Professional fire protection and life safety
+                solutions for residential, commercial and
+                industrial projects across the UAE.
+            </p>
+
+        </div>
+
+
+
+        <!-- QUICK LINKS -->
+
+        <div class="footer-column">
+
+            <h3>
+                QUICK LINKS
+            </h3>
+
+            <a href="{{ url_for('home') }}">
+                Home
+            </a>
+
+            <a href="{{ url_for('about') }}">
+                About Us
+            </a>
+
+            <a href="{{ url_for('services') }}">
+                Services
+            </a>
+
+            <a href="{{ url_for('projects') }}">
+                Projects
+            </a>
+
+            <a href="{{ url_for('values') }}">
+                Our Values
+            </a>
+
+            <a href="{{ url_for('contact') }}">
+                Contact Us
+            </a>
+
+        </div>
+
+
+
+        <!-- SERVICES -->
+
+        <div class="footer-column">
+
+            <h3>
+                OUR SERVICES
+            </h3>
+
+            <p>Fire Pump Systems</p>
+
+            <p>Sprinkler Systems</p>
+
+            <p>Fire Hose Reel Systems</p>
+
+            <p>FM200 Systems</p>
+
+            <p>Foam Suppression Systems</p>
+
+            <p>LPG Tank & Piping Systems</p>
+
+        </div>
+
+
+
+        <!-- CONTACT -->
+
+        <div class="footer-column footer-contact">
+
+            <h3>
+                GET IN TOUCH
+            </h3>
+
+
+            <p>
+                <strong>Location:</strong><br>
+                Dubai, United Arab Emirates
+            </p>
+
+
+            <p>
+                <strong>Phone:</strong><br>
+                +971 50 123 4567
+            </p>
+
+
+            <p>
+                <strong>Email:</strong><br>
+                info@sollix.ae
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- BOTTOM -->
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 SOLLiX Electromechanical Services LLC.
+            All Rights Reserved.
+        </p>
+
+
+        <a href="#top">
+            BACK TO TOP ↑
+        </a>
+
+    </div>
+
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Us | SOLLiX Electromechanical Services LLC</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="header">
+
+    <div class="navbar">
+
+        <div class="brand">
+            <a href="{{ url_for('home') }}">
+                <img src="{{ url_for('static', filename='images/logo.png') }}"
+                     alt="SOLLiX Electromechanical Services LLC"
+                     class="site-logo">
+            </a>
+        </div>
+
+        <nav>
+            <ul class="nav-links">
+
+                <li>
+                    <a href="{{ url_for('home') }}">
+                        HOME
+                    </a>
+                </li>
+
+                <li>
+                    <a class="active"
+                       href="{{ url_for('about') }}">
+                        ABOUT US
+                    </a>
+                </li>
+
+                <li>
+                    <a href="{{ url_for('services') }}">
+                        SERVICES
+                    </a>
+                </li>
+
+                <li>
+                    <a href="{{ url_for('projects') }}">
+                        PROJECTS
+                    </a>
+                </li>
+
+                <li>
+                    <a href="{{ url_for('values') }}">
+                        OUR VALUES
+                    </a>
+                </li>
+
+                <li>
+                    <a href="{{ url_for('contact') }}">
+                        CONTACT US
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+
+        <a href="{{ url_for('contact') }}"
+           class="quote-btn">
+            GET A QUOTE
+        </a>
+
+    </div>
+
+</header>
+
+
+<!-- ================= PAGE BANNER ================= -->
+
+<section class="about-banner">
+
+    <div class="about-banner-content">
+
+        <span>WHO WE ARE</span>
+
+        <h1>ABOUT SOLLiX</h1>
+
+        <p>
+            Delivering reliable fire protection and
+            life safety solutions across the UAE.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT COMPANY ================= -->
+
+<section class="about-company">
+
+    <div class="about-container">
+
+        <div class="about-image">
+
+       <div class="about-image-placeholder">
+    <img src="{{ url_for('static', filename='about.jpg') }}"
+         alt="SOLLiX Fire Protection Systems">
+</div>
+
+            <div class="experience-box">
+                <strong>UAE</strong>
+                <span>Fire Protection Solutions</span>
+            </div>
+
+        </div>
+
+
+        <div class="about-content">
+
+            <span class="section-label">
+                ABOUT OUR COMPANY
+            </span>
+
+            <h2>
+                PROFESSIONAL FIRE PROTECTION
+                & LIFE SAFETY SOLUTIONS
+            </h2>
+
+            <div class="section-line"></div>
+
+            <p>
+                SOLLiX Electromechanical Services LLC provides
+                professional firefighting installation and
+                maintenance solutions for projects across Dubai
+                and the United Arab Emirates.
+            </p>
+
+            <p>
+                Our team focuses on the installation, testing
+                and maintenance of fire protection systems while
+                maintaining high standards of safety, quality
+                and professional workmanship.
+            </p>
+
+            <p>
+                We work with residential, commercial and
+                industrial projects, delivering solutions
+                according to individual project requirements.
+            </p>
+
+
+            <div class="about-points">
+
+                <div>
+                    <span>✓</span>
+                    Safety Focused
+                </div>
+
+                <div>
+                    <span>✓</span>
+                    Quality Workmanship
+                </div>
+
+                <div>
+                    <span>✓</span>
+                    Professional Team
+                </div>
+
+                <div>
+                    <span>✓</span>
+                    Reliable Execution
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= MISSION VISION ================= -->
+
+<section class="mission-vision">
+
+    <div class="mission-container">
+
+        <div class="mission-card">
+
+            <div class="mv-number">01</div>
+
+            <h2>OUR MISSION</h2>
+
+            <div class="mv-line"></div>
+
+            <p>
+                To deliver high-quality and innovative fire
+                protection solutions with professionalism,
+                transparency, integrity and continuous
+                improvement while maintaining a strong
+                commitment to client satisfaction.
+            </p>
+
+        </div>
+
+
+        <div class="mission-card vision-card">
+
+            <div class="mv-number">02</div>
+
+            <h2>OUR VISION</h2>
+
+            <div class="mv-line"></div>
+
+            <p>
+                To contribute toward safer communities through
+                continuous improvement and excellence in
+                protecting lives, properties and the
+                environment with reliable fire protection
+                solutions.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= EXPERTISE ================= -->
+
+<section class="expertise-section">
+
+    <div class="expertise-heading">
+
+        <span class="section-label">WHERE WE WORK</span>
+
+        <h2>OUR TECHNICAL EXPERTISE</h2>
+
+        <div class="section-line"></div>
+
+        <p>
+            Fire protection solutions for a diverse range
+            of projects and environments.
+        </p>
+
+    </div>
+
+
+    <div class="expertise-grid">
+
+        <div class="expertise-card">
+            <div class="expertise-icon">⌂</div>
+            <h3>RESIDENTIAL</h3>
+            <p>
+                Villas, apartments and residential
+                tower projects.
+            </p>
+        </div>
+
+
+        <div class="expertise-card">
+            <div class="expertise-icon">▦</div>
+            <h3>COMMERCIAL</h3>
+            <p>
+                Offices, retail shops, hotels
+                and malls.
+            </p>
+        </div>
+
+
+        <div class="expertise-card">
+            <div class="expertise-icon">⚙</div>
+            <h3>INDUSTRIAL</h3>
+            <p>
+                Warehouses, factories and
+                storage facilities.
+            </p>
+        </div>
+
+
+        <div class="expertise-card">
+            <div class="expertise-icon">◆</div>
+            <h3>FIT-OUT</h3>
+            <p>
+                Restaurants, showrooms, offices
+                and retail outlets.
+            </p>
+        </div>
+
+
+        <div class="expertise-card">
+            <div class="expertise-icon">⌁</div>
+            <h3>INFRASTRUCTURE</h3>
+            <p>
+                Pump rooms, LPG systems and
+                external hydrant networks.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="home-cta">
+
+    <div class="cta-content">
+
+        <div>
+            <span>
+                HAVE A PROJECT IN MIND?
+            </span>
+
+            <h2>
+                LET'S BUILD A SAFER FUTURE TOGETHER
+            </h2>
+        </div>
+
+        <a href="{{ url_for('contact') }}"
+           class="cta-button">
+            CONTACT US →
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-company">
+
+    <a href="{{ url_for('home') }}">
+
+        <img src="{{ url_for('static', filename='images/logo.png') }}"
+             alt="SOLLiX Electromechanical Services LLC"
+             class="footer-logo-image">
+
+    </a>
+
+    <p>
+        Professional fire protection and life safety
+        solutions for residential, commercial and
+        industrial projects across the UAE.
+    </p>
+
+</div>
+
+
+        <div class="footer-column">
+
+            <h3>QUICK LINKS</h3>
+
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('about') }}">About Us</a>
+            <a href="{{ url_for('services') }}">Services</a>
+            <a href="{{ url_for('projects') }}">Projects</a>
+            <a href="{{ url_for('values') }}">Our Values</a>
+            <a href="{{ url_for('contact') }}">Contact Us</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>OUR SERVICES</h3>
+
+            <p>Fire Pump Systems</p>
+            <p>Sprinkler Systems</p>
+            <p>Fire Hose Reel Systems</p>
+            <p>FM200 Systems</p>
+            <p>Foam Suppression Systems</p>
+            <p>LPG Tank & Piping Systems</p>
+
+        </div>
+
+
+        <div class="footer-column footer-contact">
+
+            <h3>GET IN TOUCH</h3>
+
+            <p>
+                <strong>Location:</strong><br>
+                Dubai, United Arab Emirates
+            </p>
+
+            <p>
+                <strong>Phone:</strong><br>
+                +971 50 123 4567
+            </p>
+
+            <p>
+                <strong>Email:</strong><br>
+                info@sollix.ae
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 SOLLiX Electromechanical Services LLC.
+            All Rights Reserved.
+        </p>
+        <a href="#top">BACK TO TOP ↑</a>
+    </div>
+
+</footer>
+
+</body>
+</html>
