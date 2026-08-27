@@ -17,27 +17,32 @@
 <!-- ==================================================
      NAVBAR
 ================================================== -->
-
 <header class="header">
 
     <div class="navbar">
 
         <!-- LOGO -->
-
         <div class="brand">
             <a href="{{ url_for('home') }}">
-
                 <img src="{{ url_for('static', filename='images/logo.png') }}"
                      alt="SOLLiX Electromechanical Services LLC"
                      class="site-logo">
-
             </a>
         </div>
 
+        <!-- MOBILE MENU BUTTON -->
+        <button class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
 
         <!-- NAVIGATION -->
-
-        <nav>
+        <nav class="main-nav" id="mainNav">
 
             <ul class="nav-links">
 
@@ -78,13 +83,18 @@
                     </a>
                 </li>
 
+                <li class="mobile-quote-item">
+                    <a href="{{ url_for('contact') }}"
+                       class="mobile-quote-btn">
+                        GET A QUOTE
+                    </a>
+                </li>
+
             </ul>
 
         </nav>
 
-
-        <!-- QUOTE BUTTON -->
-
+        <!-- DESKTOP QUOTE BUTTON -->
         <a href="{{ url_for('contact') }}"
            class="quote-btn">
             GET A QUOTE
@@ -93,7 +103,6 @@
     </div>
 
 </header>
-
 
 
 <!-- ==================================================
